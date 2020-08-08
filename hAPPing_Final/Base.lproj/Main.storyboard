@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jc0-j0-tT1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="f6b-N3-yQP">
+            <objects>
+                <tabBarController id="jc0-j0-tT1" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="48a-KU-qsI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d7q-Hs-f5w" kind="relationship" relationship="viewControllers" id="Cla-CG-hMt"/>
+                        <segue destination="t2B-i6-c8f" kind="relationship" relationship="viewControllers" id="cdU-Iu-6Xt"/>
+                        <segue destination="Kf6-do-mSV" kind="relationship" relationship="viewControllers" id="f5R-Oe-GYf"/>
+                        <segue destination="mGy-fI-hMu" kind="relationship" relationship="viewControllers" id="2vK-on-laf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZL1-ir-Bpn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-601" y="-117"/>
+        </scene>
+        <!--Safety Tips-->
+        <scene sceneID="EYi-xQ-TuH">
+            <objects>
+                <navigationController id="Kf6-do-mSV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Safety Tips" selectedImage="smiley.fill" catalog="system" id="NnI-Bg-Kzd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MLH-ay-HVy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Izq-Ie-hbn" kind="relationship" relationship="rootViewController" id="QC8-IE-7YH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLQ-Id-Tje" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="558"/>
+        </scene>
+        <!--Mindfulness-->
+        <scene sceneID="Mv0-dy-149">
+            <objects>
+                <navigationController id="t2B-i6-c8f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mindfulness" selectedImage="heart.fill" catalog="system" id="L1c-6v-KeM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S70-Ov-dpK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BT5-CO-erO" kind="relationship" relationship="rootViewController" id="C6l-xU-r5y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxT-gP-aBH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1001" y="558"/>
+        </scene>
+        <!--Assignments-->
+        <scene sceneID="AsM-8W-hya">
+            <objects>
+                <navigationController id="d7q-Hs-f5w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assignments" selectedImage="list.bullet" catalog="system" id="Wi7-sX-ctQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="waW-TA-aYM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="owO-8C-SjT" kind="relationship" relationship="rootViewController" id="RdV-Y4-lzB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKt-DV-clv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1825" y="558"/>
+        </scene>
+        <!--Assignments/Calendar-->
+        <scene sceneID="6yK-uq-KzU">
+            <objects>
+                <viewController id="owO-8C-SjT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RLV-Fg-97k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79483872649999998" green="0.84421479700000002" blue="0.79454356429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.79483872649999998" green="0.84421479700000002" blue="0.79454356429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Nsb-JN-nKX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Assignments/Calendar" id="Re2-R4-TJr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ukp-0p-X81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826" y="1310"/>
+        </scene>
+        <!--Mental Mindfulness-->
+        <scene sceneID="HD1-3t-hB0">
+            <objects>
+                <viewController id="BT5-CO-erO" customClass="ViewController" customModule="hAPPing_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zxu-pt-2em">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="stress tracker here " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xi7-dC-3OQ">
+                                <rect key="frame" x="87" y="177" width="240" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfw-Xt-p6A">
+                                <rect key="frame" x="99" y="396" width="172" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mental Health Resources"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BT5-CO-erO" eventType="touchUpInside" id="zeZ-JP-B84"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6471033692" green="0.73557806020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="GQ5-wn-nLW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mental Mindfulness" id="goM-Qo-d0w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Bl-Cf-9VI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1001.4492753623189" y="1309.8214285714284"/>
+        </scene>
+        <!--Stay Safe-->
+        <scene sceneID="njF-hr-Uld">
+            <objects>
+                <viewController id="Izq-Ie-hbn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWd-Zu-qCR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8419675231" green="0.72109025719999997" blue="0.71994239090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="jce-IY-tjj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stay Safe" id="Fyk-WX-hP2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KtF-86-Lhd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="1310"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="bFl-iJ-Mum">
+            <objects>
+                <viewController id="ip9-JF-Mr8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iyz-Pq-B8r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.7146832192" blue="0.69020226880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mjI-4A-5Yt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat" id="Qhh-fc-nEz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Un1-Lu-wz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="1310"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="Z3x-9b-I5h">
+            <objects>
+                <navigationController id="mGy-fI-hMu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" selectedImage="text.bubble.fill" catalog="system" id="f4b-mK-XtN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A9W-Hx-Q4q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ip9-JF-Mr8" kind="relationship" relationship="rootViewController" id="VNv-3c-GuO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7O-Ce-jwd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="558"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
+        <image name="smiley.fill" catalog="system" width="64" height="60"/>
+        <image name="text.bubble.fill" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
