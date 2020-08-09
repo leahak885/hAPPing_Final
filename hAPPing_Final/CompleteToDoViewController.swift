@@ -13,16 +13,21 @@ class CompleteToDoViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     
     @IBAction func completeTapped(_ sender: Any) {
-        
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+          if let theToDo = selectedToDo {
+            context.delete(theToDo)
+            navigationController?.popViewController(animated: true)
+            }
         }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        titleLabel.text = selectedToDo.name
+        titleLabel.text = selectedToDo?.name
     }
     
     var previousVC = ToDoTableViewController()
     var selectedToDo = ToDo()
+    var selectedToDo : toDoCD?
 
     /*
     // MARK: - Navigation

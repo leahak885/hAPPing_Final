@@ -9,12 +9,28 @@
 import UIKit
 
 class ToDoTableViewController: UITableViewController {
+    
+    var toDos : [toDoCD] = []
+    
+    func getToDos() {
+      if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
 
+        if let coreDataToDos = try? context.fetch(toDoCD.fetchRequest()) as? [toDoCD] {
+            if let theToDos = coreDataToDos {
+                toDos = theToDos
+                tableView.reloadData()
+            }
+        }
+      }
+    }
+    
     var toDos : [ToDo] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        toDos = createToDos()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      getToDos()
     }
 
     // MARK: - Table view data source
@@ -32,7 +48,7 @@ class ToDoTableViewController: UITableViewController {
         
         return [swift, dog]
     }
-
+        
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
